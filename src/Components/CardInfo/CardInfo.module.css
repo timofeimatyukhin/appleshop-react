@@ -1,0 +1,10 @@
+.cardInfo {
+  margin-top: 20px;
+}
+
+.cardName {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.14;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,16 @@
+.textBlock {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.mainText {
+  font-size: 60px;
+  color: #000;
+}
+
+.secondaryText {
+  font-size: 60px;
+  color: gray;
+}

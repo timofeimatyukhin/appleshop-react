@@ -1,0 +1,16 @@
+.bagButton {
+  color: white;
+  border: none;
+  width: 90px;
+  height: 30px;
+  background: #0071e3;
+  border-radius: 5px;
+}
+
+.bagButton:hover {
+  box-shadow: 0px 5px 15px rgba(0, 7, 95, 0.3);
+  background-color: #63affc;
+  color: rgb(73, 73, 73);
+  cursor: pointer;
+  transition: 0.7s;
+}

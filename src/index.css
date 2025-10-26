@@ -1,0 +1,12 @@
+#root {
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  background-color: rgb(241, 241, 241);
+}
+h1 {
+  font-size: 30px;
+  color: #000;
+}

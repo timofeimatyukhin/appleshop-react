@@ -1,0 +1,12 @@
+.card {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.cardImg {
+  width: 340px;
+  height: 264px;
+}
