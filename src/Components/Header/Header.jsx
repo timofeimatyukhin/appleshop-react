@@ -7,7 +7,7 @@ export const Header = () => {
     <div className={styles.mainHeader}>
       <img className={styles.headerImg} src="/Images/apple-logo.svg" alt=""/>
       <div className={styles.headerName}>Apple Shop</div>
-      <Button text = {'Shop Bag'}/>
+      <Button className='headerBtn' text = {'Shop Bag'}/>
     </div>
   );
 };
