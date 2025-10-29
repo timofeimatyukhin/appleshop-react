@@ -5,6 +5,7 @@
   height: 30px;
   background: #0071e3;
   border-radius: 5px;
+  font-family: 'Roboto';
 }
 
 .btn:hover {
@@ -21,4 +22,26 @@
 
 .headerBtn {
   margin-right: 200px;
+}
+
+.counterBtn {
+  border: none;
+  background: white;
+  width: 40px;
+  height: 30px;
+  font-size: 14px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.counterBtn:last-child {
+  margin-right: 0;
+}
+.counterBtn:hover {
+  background: rgb(182, 211, 255);
+  transition: 0.7s;
+}
+
+.count {
+  margin-right: 10px;
 }
