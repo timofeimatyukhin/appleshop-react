@@ -45,3 +45,13 @@
 .count {
   margin-right: 10px;
 }
+
+
+.dialog {
+  position: absolute;
+  top: 500px;
+  left: 500px;
+  width: 500px;
+  height: 1000px;
+  background-color: wheat;
+}

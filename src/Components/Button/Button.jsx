@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import styles from "./Button.module.css";
 
 export const Button = ({
@@ -7,6 +7,7 @@ export const Button = ({
   ...props
 }) => {
   const [count, setCount] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const customBtn = styles[className] || "";
 
   const handleAddToBag = () => {
@@ -25,6 +26,10 @@ export const Button = ({
     }
   };
 
+  const toggleBlock = () => {
+    setIsModalOpen(prev => !prev);
+  }
+
   if (count > 0 && className === 'cardBtn') {
     return (
       <div className={styles.counterContainer}>
@@ -36,6 +41,31 @@ export const Button = ({
           +
         </button>
       </div>
+    );
+  }
+
+  if (className === 'headerBtn') {
+    const dialogRef = useRef(null);
+
+    useEffect(() => {
+      if (isModalOpen) {
+        dialogRef.current?.showModal();
+      } else {
+        dialogRef.current?.close();
+      }
+    }, [isModalOpen]);
+
+
+    return (
+      <>
+        <button onClick={toggleBlock} className={styles.btn}>
+          {isModalOpen ? 'Close' : 'Shop Bag'}
+        </button>
+        <dialog ref={dialogRef} className={styles.dialog}>
+          <h2>Dialog</h2>
+          <button onClick={toggleBlock}>Close</button>
+        </dialog>
+      </>
     );
   }
 
