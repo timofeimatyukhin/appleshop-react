@@ -25,18 +25,16 @@ export const Button = ({
     }
   };
 
-  if (count > 0) {
+  if (count > 0 && className === 'cardBtn') {
     return (
       <div className={styles.counterContainer}>
-        <button
-        onClick={handleDecrement}
-        className={`${styles.counterBtn}`}
-        >-</button>
+        <button onClick={handleDecrement} className={`${styles.counterBtn}`}>
+          -
+        </button>
         <span className={styles.count}>{count}</span>
-        <button
-        onClick={handleIncrement}
-        className={`${styles.counterBtn}`}
-        >+</button>
+        <button onClick={handleIncrement} className={`${styles.counterBtn}`}>
+          +
+        </button>
       </div>
     );
   }

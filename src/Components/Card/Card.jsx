@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Card.module.css'
 import Button from '../Button/Button';
 
-export const Card = ({imagePath, title, description, cost, ...props}) => {
+export const Card = ({imagePath, title, description, cost, id, ...props}) => {
   return (
     <div className={styles.card}>
       <img {...props} className={styles.cardImg} src={imagePath} alt="" />
